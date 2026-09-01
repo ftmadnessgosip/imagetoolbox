@@ -2,39 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="theme-color" content="#09070e">
-  <title>ImageToolbox — V1</title>
+
+  <meta
+    name="description"
+    content="ImageToolbox is a free browser-based image toolkit for compressing, converting, creating PDFs, cleaning metadata, extracting colors, splitting, cropping and stitching images."
+  >
+
+  <meta
+    name="keywords"
+    content="image tools, image compressor, image converter, JPG to PNG, PNG to WEBP, images to PDF, metadata remover, color extractor, image splitter, image cropper, image stitcher"
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="author" content="ImageToolbox">
+
+  <meta name="application-name" content="ImageToolbox">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ImageToolbox — Free Browser Image Tools">
+  <meta
+    property="og:description"
+    content="Compress, convert, create PDFs, clean metadata, extract colors, crop, split and stitch images directly in your browser."
+  >
+  <meta property="og:site_name" content="ImageToolbox">
+
+  <!-- Twitter/X Preview -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ImageToolbox — Free Browser Image Tools">
+  <meta
+    name="twitter:description"
+    content="Free browser-based image tools with local processing."
+  >
+
+  <!-- Canonical URL -->
+  <!--
+    IMPORTANT:
+    Replace the URL below with your actual GitHub Pages URL
+    if your final URL is different.
+  -->
+  <link
+    rel="canonical"
+    href="https://ftmadnessgosip.github.io/imagetoolbox/"
+  >
+
+  <title>ImageToolbox — Free Online Image Tools</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- Prevent search engines from treating old browsers strangely -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 
 <body>
 
 <header class="navbar">
-  <a href="#" class="logo">
+
+  <a href="#home" class="logo" aria-label="ImageToolbox Home">
     <span>✦</span> Image<b>Toolbox</b>
   </a>
 
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="#home" class="active">Home</a>
     <a href="#tools">Tools</a>
     <a href="#how">How it works</a>
     <a href="#privacy">Privacy</a>
   </nav>
 
-  <a href="#tools" class="nav-button">Explore tools ↗</a>
+  <a href="#tools" class="nav-button">
+    Explore tools ↗
+  </a>
 
-  <button id="menuButton">☰</button>
+  <button
+    id="menuButton"
+    type="button"
+    aria-label="Open navigation menu"
+    aria-controls="mobileMenu"
+    aria-expanded="false"
+  >
+    ☰
+  </button>
+
 </header>
 
+
 <div id="mobileMenu">
+
   <a href="#home">Home</a>
   <a href="#tools">Tools</a>
   <a href="#how">How it works</a>
   <a href="#privacy">Privacy</a>
+
 </div>
 
+
 <main>
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero" id="home">
 
@@ -55,6 +126,7 @@
     </p>
 
     <div class="hero-buttons">
+
       <a href="#tools" class="primary-button">
         Start using tools →
       </a>
@@ -62,6 +134,7 @@
       <a href="#how" class="secondary-button">
         See how it works
       </a>
+
     </div>
 
     <div class="trust">
@@ -71,6 +144,7 @@
     </div>
 
   </div>
+
 
   <div class="hero-visual">
 
@@ -90,6 +164,7 @@
       </div>
 
       <div class="image-info">
+
         <div>
           <small>SIZE</small>
           <b>486 KB</b>
@@ -100,10 +175,14 @@
           <b>WEBP</b>
         </div>
 
-        <button>Download ↓</button>
+        <button type="button">
+          Download ↓
+        </button>
+
       </div>
 
     </div>
+
 
     <div class="floating-card card-one">
       <b>⌁ Smart Compressor</b>
@@ -123,7 +202,12 @@
 
 </section>
 
-<section class="stats">
+
+<!-- =========================
+     STATS
+========================= -->
+
+<section class="stats" aria-label="ImageToolbox features">
 
   <div>
     <b>8</b>
@@ -148,17 +232,25 @@
 </section>
 
 
+<!-- =========================
+     TOOLS
+========================= -->
+
 <section class="section" id="tools">
 
   <div class="section-heading">
 
     <div>
-      <div class="badge">✦ Explore the toolbox</div>
+
+      <div class="badge">
+        ✦ Explore the toolbox
+      </div>
 
       <h2>
         Everything you need.
         <span>Nothing you don't.</span>
       </h2>
+
     </div>
 
     <p>
@@ -171,83 +263,246 @@
 
   <div class="tools-grid">
 
+    <!-- TOOL 01 -->
+
     <article class="tool-card" data-tool="compress">
+
       <small class="number">01</small>
-      <div class="tool-icon purple">⌁</div>
-      <h3>Smart Compressor</h3>
-      <p>Reduce image size with quality control.</p>
-      <div class="tags"><i>Quality</i><i>WEBP</i><i>JPG</i></div>
-      <button>Open tool →</button>
+
+      <div class="tool-icon purple">
+        ⌁
+      </div>
+
+      <h3>
+        Smart Compressor
+      </h3>
+
+      <p>
+        Reduce image size with quality control.
+      </p>
+
+      <div class="tags">
+        <i>Quality</i>
+        <i>WEBP</i>
+        <i>JPG</i>
+      </div>
+
+      <button type="button">
+        Open tool →
+      </button>
+
     </article>
 
+
+    <!-- TOOL 02 -->
 
     <article class="tool-card" data-tool="convert">
+
       <small class="number">02</small>
-      <div class="tool-icon orange">↔</div>
-      <h3>Image Converter</h3>
-      <p>Convert JPG, PNG and WebP locally.</p>
-      <div class="tags"><i>JPG</i><i>PNG</i><i>WEBP</i></div>
-      <button>Open tool →</button>
+
+      <div class="tool-icon orange">
+        ↔
+      </div>
+
+      <h3>
+        Image Converter
+      </h3>
+
+      <p>
+        Convert JPG, PNG and WebP locally.
+      </p>
+
+      <div class="tags">
+        <i>JPG</i>
+        <i>PNG</i>
+        <i>WEBP</i>
+      </div>
+
+      <button type="button">
+        Open tool →
+      </button>
+
     </article>
 
+
+    <!-- TOOL 03 -->
 
     <article class="tool-card" data-tool="pdf">
+
       <small class="number">03</small>
-      <div class="tool-icon pink">▣</div>
-      <h3>Images → PDF</h3>
-      <p>Combine multiple images into one PDF.</p>
-      <div class="tags"><i>A4</i><i>Multi-image</i></div>
-      <button>Open tool →</button>
+
+      <div class="tool-icon pink">
+        ▣
+      </div>
+
+      <h3>
+        Images → PDF
+      </h3>
+
+      <p>
+        Combine multiple images into one PDF.
+      </p>
+
+      <div class="tags">
+        <i>A4</i>
+        <i>Multi-image</i>
+      </div>
+
+      <button type="button">
+        Open tool →
+      </button>
+
     </article>
 
+
+    <!-- TOOL 04 -->
 
     <article class="tool-card" data-tool="metadata">
+
       <small class="number">04</small>
-      <div class="tool-icon cyan">⌫</div>
-      <h3>Metadata Cleaner</h3>
-      <p>Create a fresh copy without common metadata.</p>
-      <div class="tags"><i>EXIF</i><i>Privacy</i></div>
-      <button>Open tool →</button>
+
+      <div class="tool-icon cyan">
+        ⌫
+      </div>
+
+      <h3>
+        Metadata Cleaner
+      </h3>
+
+      <p>
+        Create a fresh copy without common metadata.
+      </p>
+
+      <div class="tags">
+        <i>EXIF</i>
+        <i>Privacy</i>
+      </div>
+
+      <button type="button">
+        Open tool →
+      </button>
+
     </article>
 
+
+    <!-- TOOL 05 -->
 
     <article class="tool-card" data-tool="colors">
+
       <small class="number">05</small>
-      <div class="tool-icon yellow">◈</div>
-      <h3>Color Extractor</h3>
-      <p>Extract dominant colors and copy HEX.</p>
-      <div class="tags"><i>Palette</i><i>HEX</i></div>
-      <button>Open tool →</button>
+
+      <div class="tool-icon yellow">
+        ◈
+      </div>
+
+      <h3>
+        Color Extractor
+      </h3>
+
+      <p>
+        Extract dominant colors and copy HEX.
+      </p>
+
+      <div class="tags">
+        <i>Palette</i>
+        <i>HEX</i>
+      </div>
+
+      <button type="button">
+        Open tool →
+      </button>
+
     </article>
 
+
+    <!-- TOOL 06 -->
 
     <article class="tool-card" data-tool="split">
+
       <small class="number">06</small>
-      <div class="tool-icon green">⊞</div>
-      <h3>Image Splitter</h3>
-      <p>Divide one image into equal grid tiles.</p>
-      <div class="tags"><i>Grid</i><i>PNG</i></div>
-      <button>Open tool →</button>
+
+      <div class="tool-icon green">
+        ⊞
+      </div>
+
+      <h3>
+        Image Splitter
+      </h3>
+
+      <p>
+        Divide one image into equal grid tiles.
+      </p>
+
+      <div class="tags">
+        <i>Grid</i>
+        <i>PNG</i>
+      </div>
+
+      <button type="button">
+        Open tool →
+      </button>
+
     </article>
 
+
+    <!-- TOOL 07 -->
 
     <article class="tool-card" data-tool="ratio">
+
       <small class="number">07</small>
-      <div class="tool-icon blue">□</div>
-      <h3>Aspect Ratio Cropper</h3>
-      <p>Crop into common ratios with preview.</p>
-      <div class="tags"><i>1:1</i><i>4:5</i><i>16:9</i></div>
-      <button>Open tool →</button>
+
+      <div class="tool-icon blue">
+        □
+      </div>
+
+      <h3>
+        Aspect Ratio Cropper
+      </h3>
+
+      <p>
+        Crop into common ratios with preview.
+      </p>
+
+      <div class="tags">
+        <i>1:1</i>
+        <i>4:5</i>
+        <i>16:9</i>
+      </div>
+
+      <button type="button">
+        Open tool →
+      </button>
+
     </article>
 
 
+    <!-- TOOL 08 -->
+
     <article class="tool-card" data-tool="stitch">
+
       <small class="number">08</small>
-      <div class="tool-icon violet">⇅</div>
-      <h3>Image Stitcher</h3>
-      <p>Join multiple images vertically or horizontally.</p>
-      <div class="tags"><i>Vertical</i><i>Horizontal</i></div>
-      <button>Open tool →</button>
+
+      <div class="tool-icon violet">
+        ⇅
+      </div>
+
+      <h3>
+        Image Stitcher
+      </h3>
+
+      <p>
+        Join multiple images vertically or horizontally.
+      </p>
+
+      <div class="tags">
+        <i>Vertical</i>
+        <i>Horizontal</i>
+      </div>
+
+      <button type="button">
+        Open tool →
+      </button>
+
     </article>
 
   </div>
@@ -255,11 +510,17 @@
 </section>
 
 
+<!-- =========================
+     HOW IT WORKS
+========================= -->
+
 <section class="section how" id="how">
 
   <div class="center">
 
-    <div class="badge">✦ Zero friction</div>
+    <div class="badge">
+      ✦ Zero friction
+    </div>
 
     <h2>
       Three steps.
@@ -278,26 +539,48 @@
     <div>
       <b>01</b>
       <strong>↑</strong>
-      <h3>Select</h3>
-      <p>Choose your image.</p>
+
+      <h3>
+        Select
+      </h3>
+
+      <p>
+        Choose your image.
+      </p>
     </div>
 
+
     <hr>
+
 
     <div>
       <b>02</b>
       <strong>✦</strong>
-      <h3>Process</h3>
-      <p>Your browser does the work.</p>
+
+      <h3>
+        Process
+      </h3>
+
+      <p>
+        Your browser does the work.
+      </p>
     </div>
 
+
     <hr>
+
 
     <div>
       <b>03</b>
       <strong>↓</strong>
-      <h3>Download</h3>
-      <p>Save the result.</p>
+
+      <h3>
+        Download
+      </h3>
+
+      <p>
+        Save the result.
+      </p>
     </div>
 
   </div>
@@ -305,13 +588,19 @@
 </section>
 
 
+<!-- =========================
+     PRIVACY
+========================= -->
+
 <section class="section" id="privacy">
 
   <div class="privacy">
 
     <div>
 
-      <div class="badge">✦ Built for privacy</div>
+      <div class="badge">
+        ✦ Built for privacy
+      </div>
 
       <h2>
         Your image doesn't need
@@ -324,17 +613,89 @@
       </p>
 
       <ul>
-        <li>01 — Files stay on your device</li>
-        <li>02 — No account required</li>
-        <li>03 — Easy free hosting</li>
+        <li>
+          01 — Files stay on your device
+        </li>
+
+        <li>
+          02 — No account required
+        </li>
+
+        <li>
+          03 — Easy free hosting
+        </li>
       </ul>
 
     </div>
 
-    <div class="shield">
+
+    <div
+      class="shield"
+      aria-label="Local processing"
+    >
       ⌾
-      <small>LOCAL<br>PROCESSING</small>
+
+      <small>
+        LOCAL<br>
+        PROCESSING
+      </small>
+
     </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section" id="about">
+
+  <div class="center">
+
+    <div class="badge">
+      ✦ About ImageToolbox
+    </div>
+
+    <h2>
+      Simple tools.
+      <span>Less hassle.</span>
+    </h2>
+
+    <p>
+      ImageToolbox is a browser-based collection of practical
+      image utilities designed to handle common image tasks
+      without requiring complicated software or an account.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section" id="contact">
+
+  <div class="center">
+
+    <div class="badge">
+      ✦ Contact
+    </div>
+
+    <h2>
+      Found a problem?
+      <span>Let us know.</span>
+    </h2>
+
+    <p>
+      If a tool isn't working as expected, you can report the
+      issue so it can be investigated in a future update.
+    </p>
 
   </div>
 
@@ -343,9 +704,13 @@
 </main>
 
 
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
-  <a href="#" class="logo">
+  <a href="#home" class="logo" aria-label="ImageToolbox Home">
     <span>✦</span> Image<b>Toolbox</b>
   </a>
 
@@ -357,16 +722,53 @@
     V1.0 • Browser powered
   </small>
 
+  <div class="footer-links">
+
+    <a href="#home">
+      Home
+    </a>
+
+    <a href="#tools">
+      Tools
+    </a>
+
+    <a href="#about">
+      About
+    </a>
+
+    <a href="#privacy">
+      Privacy
+    </a>
+
+    <a href="#contact">
+      Contact
+    </a>
+
+  </div>
+
 </footer>
 
 
-<!-- TOOL MODAL -->
+<!-- =========================
+     TOOL MODAL
+========================= -->
 
-<div id="toolModal" class="modal">
+<div
+  id="toolModal"
+  class="modal"
+  aria-hidden="true"
+>
 
   <div class="modal-box">
 
-    <button id="closeModal" class="close-button">×</button>
+    <button
+      id="closeModal"
+      class="close-button"
+      type="button"
+      aria-label="Close tool"
+    >
+      ×
+    </button>
 
     <div id="toolApp"></div>
 
@@ -375,9 +777,18 @@
 </div>
 
 
-<div id="toast"></div>
+<!-- Toast notification -->
+
+<div
+  id="toast"
+  role="status"
+  aria-live="polite"
+></div>
+
+
+<!-- Main JavaScript -->
 
 <script src="script.js"></script>
 
 </body>
-</html>
+        </html>
